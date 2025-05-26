@@ -32,4 +32,6 @@ public class StudentManager
     public void printStudent() {
         System.out.println("test by jiyun");
     }
+    
+    //Commit test용
 }
