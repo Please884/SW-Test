@@ -28,4 +28,8 @@ public class StudentManager
     public boolean hasStudent(String name) {
         return students.contains(name);
     }
+
+    public void printStudent() {
+        System.out.println("test by jiyun");
+    }
 }
