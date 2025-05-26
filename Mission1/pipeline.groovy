@@ -62,7 +62,7 @@ pipeline {
             junit "${REPORT_DIR}/**/*.xml"
             archiveArtifacts artifacts: "${REPORT_DIR}/**/*", allowEmptyArchive: true
             
-            emailtext(
+            emailext(
 				subject: "Build 결과: ${currentBuild.currentResult}",
 				to: "shb9512@gmail.com,appleru1515@gmail.com.dive0dice@gmail.com",
 				attachlog: true
