@@ -33,5 +33,4 @@ public class StudentManager
         System.out.println("test by jiyun");
     }
     
-    //Commit test용
 }
