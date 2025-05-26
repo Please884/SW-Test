@@ -64,7 +64,6 @@ pipeline {
             
             emailtext(
 				subject: "Build 결과: ${currentBuild.currentResult}"
-				body: ""
 				to: "shb9512@gmail.com, appleru1515@gmail.com, dive0dice@gmail.com"
 				attachlog: true
 			)
