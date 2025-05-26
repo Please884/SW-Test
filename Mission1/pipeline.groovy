@@ -61,6 +61,10 @@ pipeline {
             echo "[*] Archiving test results..."
             junit "${REPORT_DIR}/**/*.xml"
             archiveArtifacts artifacts: "${REPORT_DIR}/**/*", allowEmptyArchive: true
+            
+            mail to: 'shb9512@gmail.com',
+                 subject: "Pipeline 실행 결과: ${currentBuild.currentResult}",
+                 body: "빌드 URL: ${env.BUILD_URL}"
         }
 
         failure {
