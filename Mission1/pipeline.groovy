@@ -64,7 +64,7 @@ pipeline {
             
             mail to: 'shb9512@gmail.com, appleru1515@gmail.com, dive0dice@gmail.com',
                  subject: "Pipeline 실행 결과: ${currentBuild.currentResult}",
-                 body: "Console 출력: ${currentBuild.rawBuildUrl.getLog()}"
+                 body: "Console 출력: ${currentBuild.rawBuild.getLog()}"
         }
 
         failure {
